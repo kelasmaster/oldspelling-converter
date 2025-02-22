@@ -6,7 +6,14 @@ function convertToModern(text) {
         .replace(/nj/g, 'ny')
         .replace(/sj/g, 'sy')
         .replace(/ch/g, 'kh')
-        .replace(/oe/g, 'u');
+        .replace(/oe/g, 'u')
+        .replace(/Dj/g, 'J')
+        .replace(/Tj/g, 'C')
+        .replace(/J/g, 'Y')
+        .replace(/Nj/g, 'Ny')
+        .replace(/Sj/g, 'Sy')
+        .replace(/Ch/g, 'Kh')
+        .replace(/Oe/g, 'U');
 }
 
 function convertToOld(text) {
@@ -17,7 +24,14 @@ function convertToOld(text) {
         .replace(/y/g, 'j')
         .replace(/c/g, 'tj')
         .replace(/j/g, 'dj')
-        .replace(/u/g, 'oe');
+        .replace(/u/g, 'oe')
+        .replace(/Kh/g, 'Ch')
+        .replace(/Sy/g, 'Sj')
+        .replace(/Ny/g, 'Nj')
+        .replace(/Y/g, 'J')
+        .replace(/C/g, 'Tj')
+        .replace(/J/g, 'Dj')
+        .replace(/U/g, 'Oe');
 }
 
 // Example usage
